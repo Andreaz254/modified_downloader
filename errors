@@ -1,0 +1,64 @@
+install custom tkinter
+
+######ERRORS#######
+(1)Traceback (most recent call last):
+  File "/home/andreas/test.py", line 1, in <module>
+    import tkinter.ttk
+ModuleNotFoundError: No module named 'tkinter'
+
+sol-(pip)
+
+(2)
+Traceback (most recent call last):
+  File "/home/andreas/test.py", line 2, in <module>
+    import customtkinter
+ModuleNotFoundError: No module named 'customtkinter'
+
+(3)
+ Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux-libc-dev_5.15.0-133.144_amd64.deb
+
+(4)
+Traceback (most recent call last):
+  File "test.py", line 5, in <module>
+    from PIL import Image, ImageTk
+ModuleNotFoundError: No module named 'PIL'
+
+(5)
+Traceback (most recent call last):
+  File "test.py", line 13, in <module>
+    app = customtkinter.CTk()
+  File "/usr/local/lib/python3.8/dist-packages/customtkinter/windows/ctk_tk.py", line 40, in __init__
+    CTK_PARENT_CLASS.__init__(self, **pop_from_dict_by_set(kwargs, self._valid_tk_constructor_arguments))
+  File "/usr/lib/python3.8/tkinter/__init__.py", line 2270, in __init__
+    self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+_tkinter.TclError: no display name and no $DISPLAY environment variable
+
+(6)
+Traceback (most recent call last):
+  File "/home/andreas/test.py", line 5, in <module>
+    from PIL import Image, ImageTk
+ImportError: cannot import name 'ImageTk' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)
+
+(7)
+Traceback (most recent call last):
+  File "/home/andreas/test.py", line 18, in <module>
+    app.iconbitmap("Assets\sigmadarkmodelogo.ico")
+  File "/home/andreas/.local/lib/python3.10/site-packages/customtkinter/windows/ctk_tk.py", line 232, in iconbitmap
+    super().wm_iconbitmap(bitmap, default)
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 2109, in wm_iconbitmap
+    return self.tk.call('wm', 'iconbitmap', self._w, bitmap)
+_tkinter.TclError: bitmap "Assets\sigmadarkmodelogo.ico" not defined
+
+(8)
+Traceback (most recent call last):
+  File "/home/andreas/test.py", line 18, in <module>
+    app.iconbitmap("Assets/sigmadarkmodelogo.ico")
+  File "/home/andreas/.local/lib/python3.10/site-packages/customtkinter/windows/ctk_tk.py", line 232, in iconbitmap
+    super().wm_iconbitmap(bitmap, default)
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 2109, in wm_iconbitmap
+    return self.tk.call('wm', 'iconbitmap', self._w, bitmap)
+_tkinter.TclError: bitmap "Assets/sigmadarkmodelogo.ico" not defined
+
+
+
+
